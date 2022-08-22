@@ -70,19 +70,37 @@ const allUpperCase = (arr) => {
 /* ------------------------------------------------------------------------------------------------
 CHALLENGE 4
 
-Write a function named `greeting` that takes in a single string and returns the string in all uppercase letters, and followed by an "!".
+Write a function named `greeting` x
+that takes in a single string and returns the string in all uppercase letters,
+and followed by an "!".
 
-Then, write a function named `speaker` that takes in an array of strings and a callback function.
+Then, write a function named `speaker` X
+that takes in an array of strings X
+and a callback function. X
 
-Use `forEach` to build a new array of strings, each string modified by the callback. Return the new array.
+Use `forEach` to build a new array of strings,
+each string modified by the callback.
+Return the new array.
 ------------------------------------------------------------------------------------------------ */
 
 const greeting = (word) => {
   // Solution code here...
+  console.log('4444444',word);
+  let newWord = [];
+  word.forEach((element) => {
+    newWord.push(element.toUpperCase()+ '!');
+  });
+  console.log('fingersCrossed', newWord);
+  return newWord;
 };
 
 const speaker = (words, callback) => {
   // Solution code here...
+  // let newWords = [''];
+//   newWords.forEach(newWord(element) => {newWords.push(element.toUpperCase()+'!');
+// });
+  let newWords = callback(words);
+  return newWords;
 };
 
 /* ------------------------------------------------------------------------------------------------
@@ -178,7 +196,7 @@ describe('Testing challenge 3', () => {
   });
 });
 
-xdescribe('Testing challenge 4', () => {
+describe('Testing challenge 4', () => {
   test('It should provide an array of strings, that get uppercased, and a "!" at the end', () => {
     expect(speaker(['hello', '301', 'students'], greeting)).toStrictEqual(['HELLO!', '301!', 'STUDENTS!']);
   });
