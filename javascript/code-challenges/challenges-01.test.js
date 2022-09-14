@@ -9,39 +9,63 @@ Use `forEach` to loop over the input array and work with each value.  Push the n
 ------------------------------------------------------------------------------------------------ */
 
 const addOne = (arr) => {
+<<<<<<< HEAD
   // console.log('xxxxxxxxxxxxxxxxx',arr);
   // Solution code here...
+=======
+  console.log('xxxxxxxxxxxxxxxxx',arr);
+>>>>>>> e2aa494a1af8c5d8f389df2995cad09f316dbb48
   const newArray = [];
   arr.forEach(element => {
     newArray.push(element + 1);
   });
+<<<<<<< HEAD
   // console.log('newnewnewnewnew', newArray);
+=======
+  console.log('newnewnewnewnew', newArray)
+>>>>>>> e2aa494a1af8c5d8f389df2995cad09f316dbb48
   return newArray;
 };
 
 /* ------------------------------------------------------------------------------------------------
 CHALLENGE 2
 
+<<<<<<< HEAD
 Write a function named `addExclamation` that takes an array of strings, and returns a new array of the same strings with an "!" added to the end.
+=======
+Write a function named `addExclamation`x
+that takes an array of strings,
+ and returns a new array
+  of the same strings with an "!" added to the end.
+>>>>>>> e2aa494a1af8c5d8f389df2995cad09f316dbb48
 
 Use `forEach` to loop over the input array. Modify each string, and add the updated value into a local array. Return the local array;
 ------------------------------------------------------------------------------------------------ */
 
 const addExclamation = (arr) => {
+<<<<<<< HEAD
   // Solution code here...
   console.log('222222222',arr);
   // Solution code here...
+=======
+  //console.log ('Fffffffffffriday', arr);
+>>>>>>> e2aa494a1af8c5d8f389df2995cad09f316dbb48
   const newArray = [];
   arr.forEach(element => {
     newArray.push(element + '!');
   });
+<<<<<<< HEAD
   console.log('newnewnewnewnew', newArray);
+=======
+  //console.log ('Heeeeelllllllp', newArray);
+>>>>>>> e2aa494a1af8c5d8f389df2995cad09f316dbb48
   return newArray;
 };
 
 /* ------------------------------------------------------------------------------------------------
 CHALLENGE 3
 
+<<<<<<< HEAD
 Write a function named `allUpperCase` X
 that takes an array of strings, X
  and returns a new array X
@@ -81,10 +105,38 @@ and a callback function. X
 Use `forEach` to build a new array of strings,
 each string modified by the callback.
 Return the new array.
+=======
+Write a function named `allUpperCase`x
+ that takes an array of strings,x
+  and returns a new array of the strings
+   converted to upper case.
+
+Use `forEach` to loop over the input array.
+ The modified strings should each be added into a local array.
+  Return that local array.
+------------------------------------------------------------------------------------------------ */
+
+const allUpperCase = (arr) => {
+  const newArray = [];
+  arr.forEach(element => {newArray.push(element.toUpperCase());
+  });
+  console.log('WWWWWWWhhhhyyyyNNNNooott', arr);
+  return newArray(toUpperCase);
+};
+/* ------------------------------------------------------------------------------------------------
+CHALLENGE 4
+
+Write a function named `greeting` that takes in a single string and returns the string in all uppercase letters, and followed by an "!".
+
+Then, write a function named `speaker` that takes in an array of strings and a callback function.
+
+Use `forEach` to build a new array of strings, each string modified by the callback. Return the new array.
+>>>>>>> e2aa494a1af8c5d8f389df2995cad09f316dbb48
 ------------------------------------------------------------------------------------------------ */
 
 const greeting = (word) => {
   // Solution code here...
+<<<<<<< HEAD
   console.log('4444444',word);
   let newWord = [];
   word.forEach((element) => {
@@ -92,15 +144,20 @@ const greeting = (word) => {
   });
   console.log('fingersCrossed', newWord);
   return newWord;
+=======
+>>>>>>> e2aa494a1af8c5d8f389df2995cad09f316dbb48
 };
 
 const speaker = (words, callback) => {
   // Solution code here...
+<<<<<<< HEAD
   // let newWords = [''];
 //   newWords.forEach(newWord(element) => {newWords.push(element.toUpperCase()+'!');
 // });
   let newWords = callback(words);
   return newWords;
+=======
+>>>>>>> e2aa494a1af8c5d8f389df2995cad09f316dbb48
 };
 
 /* ------------------------------------------------------------------------------------------------
@@ -178,25 +235,41 @@ Run your tests from the console: jest challenges-01.test.js
 
 ------------------------------------------------------------------------------------------------ */
 
+<<<<<<< HEAD
 describe('Testing challenge 1', () => {
+=======
+xdescribe('Testing challenge 1', () => {
+>>>>>>> e2aa494a1af8c5d8f389df2995cad09f316dbb48
   test('It should return an array with 1 added to each value of the original array', () => {
     expect(addOne([1, 2, 3, 4, 5])).toStrictEqual([2, 3, 4, 5, 6]);
   });
 });
 
+<<<<<<< HEAD
 describe('Testing challenge 2', () => {
+=======
+xdescribe('Testing challenge 2', () => {
+>>>>>>> e2aa494a1af8c5d8f389df2995cad09f316dbb48
   test('It should return an array with an exclamation point added to each value of the original array', () => {
     expect(addExclamation(['hi', 'how', 'are', 'you'])).toStrictEqual(['hi!', 'how!', 'are!', 'you!']);
   });
 });
 
+<<<<<<< HEAD
 describe('Testing challenge 3', () => {
+=======
+xdescribe('Testing challenge 3', () => {
+>>>>>>> e2aa494a1af8c5d8f389df2995cad09f316dbb48
   test('It should return an array of uppercase strings', () => {
     expect(allUpperCase(['hi', 'how', 'are', 'you'])).toStrictEqual(['HI', 'HOW', 'ARE', 'YOU']);
   });
 });
 
+<<<<<<< HEAD
 describe('Testing challenge 4', () => {
+=======
+xdescribe('Testing challenge 4', () => {
+>>>>>>> e2aa494a1af8c5d8f389df2995cad09f316dbb48
   test('It should provide an array of strings, that get uppercased, and a "!" at the end', () => {
     expect(speaker(['hello', '301', 'students'], greeting)).toStrictEqual(['HELLO!', '301!', 'STUDENTS!']);
   });
