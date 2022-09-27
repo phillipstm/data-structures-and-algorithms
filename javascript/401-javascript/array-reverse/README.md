@@ -29,7 +29,7 @@ b. Move pointers toward middle, repeat.
 
 return the moified array
 
-**PsuedoCode:**
+**PseudoCode:**
 reverseArray <- function
 array <- array length -1
 
