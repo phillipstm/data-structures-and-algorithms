@@ -1,7 +1,7 @@
 'use strict';
 
 // Require our linked list implementation
-const LinkedLilst = require('../index');
+const LinkedList = require('../index');
 
 describe('Linked List', () => {
   it('works', () => {
@@ -9,37 +9,15 @@ describe('Linked List', () => {
   });
 });
 
-class Node {
-  constructor(value) {
-    this.value = value;
-    this.next = null;
-  }
-}
-class LinkedList {
-  constructor() {
-    this.head = null;
-  }
 
-  add(value) {
-    const node = new Node(value);
-    if (!this.head) {
-      this.head = node;
-      return;
-    }
-    let current = this.head;
-    while (current.next) {
-      current = current.next;
-    }
-    current.next = node;
-  }
 
-  transverse() {
-    let current = this.head;
-    while (current) {
-      console.log(current.value);
-      current = current.next;
-    }
-  }
+Node = {
+  value:1,
+  next: node2,
+  next: node3,
+  next: node4,
+  next: node5,
+  next: null,
 }
 
 let list = new LinkedList();
@@ -50,5 +28,10 @@ list.add(2);
 list.add(3);
 list.add(4);
 list.add(5);
+
+list = {
+  head: node1
+  add: (value) => ()
+}
 
 list.transverse();
