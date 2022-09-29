@@ -27,7 +27,7 @@ describe('LinkedList Tests', () => {
       expect('WhassUp').toEqual(expected);
     });
     test('Can properly insert multiple nodes into the linked list' () => {
-      list.insert('cherry');
+      list.insert('cherry'),
 
       expect(list.head.value).toEqual('cherry');
       expect(list.head.next.value).toEqual('WhasssUp');
