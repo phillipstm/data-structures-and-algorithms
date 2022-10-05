@@ -1,22 +1,22 @@
 'use strict';
 
+const { Queue } = require('../');
 
-class Node {
-  constructor(data) {
-    this.data = data;
-    this.next = null;
+class Animal {
+  constructor(name, type) {
+    this.name = name;
+    this.type = type;
   }
 }
 class AnimalShelter {
   constructor() {
-    this.front = null;
-    this.back = null;
+    this.dog = new Queue();
+    this.cat = new Queue();
   }
-}
-class Dog extends AnimalShelter {
-  super(data) {
-    let Dog = new Dog(data);
-    this.dog = enqueue1(data);
+
+ enqueue(animal) {
+    if pref = this.dog.queue(),
+    
   }
 }
 
