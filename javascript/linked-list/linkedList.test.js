@@ -5,8 +5,8 @@ let LinkedList = require('./linkedList');
 describe('Linked List', () => {
   it ('Can successfully instantiate an empty linked list', () => {
     // write the test
-  })
-})
+  });
+});
 
 
 // Can successfully instantiate an empty linked list
