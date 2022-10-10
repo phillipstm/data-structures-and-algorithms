@@ -12,7 +12,7 @@ describe('LinkedList Tests', () => {
       expect(list.head).toBeNull();
       expect(list.head).toBeFalsy();
     });
-    test ('Can properly insert into the linked list', () => {
+    test('Can properly insert into the linked list', () => {
       list.insert('WhasssUp');
       list.insert('RockOn');
 
@@ -26,25 +26,25 @@ describe('LinkedList Tests', () => {
 
       expect('WhassUp').toEqual(expected);
     });
-    test('Can properly insert multiple nodes into the linked list' () => {
+    test('Can properly insert multiple nodes into the linked list'() => {
       list.insert('cherry');
 
-      expect(list.head.value).toEqual('cherry');
-      expect(list.head.next.value).toEqual('WhasssUp');
-      expect(list.head.next.next.value).toEqual('RockOn');
-      expect(list.head.next.next.next).toBeNull();
-    });
+    expect(list.head.value).toEqual('cherry');
+    expect(list.head.next.value).toEqual('WhasssUp');
+    expect(list.head.next.next.value).toEqual('RockOn');
+    expect(list.head.next.next.next).toBeNull();
+  });
 
 
-    test('Will return true when finding a value within the linked list that exists', () => {
-      let result = list.includes('RockOn');
+  test('Will return true when finding a value within the linked list that exists', () => {
+    let result = list.includes('RockOn');
 
     expect(result).toBeTruthy();
     expect(result).toBe(true);
   });
 
-    test('Will return false when searching for a value in the linked list that does not exist', () => {
-      let anotherResult = list.includes('not included');
+  test('Will return false when searching for a value in the linked list that does not exist', () => {
+    let anotherResult = list.includes('not included');
 
     expect(anotherResult).toBeFalsy();
     expect(anotherResult).toBe(false);

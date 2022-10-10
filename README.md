@@ -2,6 +2,19 @@
 
 See [setup instructions](https://codefellows.github.io/setup-guide/code-301/3-code-challenges), in the Code 301 Setup Guide.
 [setup instructions](https://codefellows.github.io/setup-guide/code-301/3-code-challenges)
+
+## 401
+
+- [array-binary-search](401-javascipt/)
+- [array-insert-shift](401-javascipt/array-insert-shift.png)
+- [array-reverse](401-javascipt/array-reverse)
+- [linked-list](401-javascipt/linked-list.js)
+- [linked-list-insertions](401-javascipt/linkedListInsertions.js)
+- [linked-list-kth](401-javascipt/linked-list-kth/index.js)
+- [stack-queue-brackets](401-javascipt/stack-queue-brackets/index.js)
+//[linked-list](401-javascipt/linked-list.js)
+//[linked-list](401-javascipt/linked-list.js)
+
 ## Repository Quick Tour and Usage
 
 ### 301 Code Challenges
