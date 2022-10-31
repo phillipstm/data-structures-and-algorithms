@@ -13,35 +13,37 @@ class HashTable {
     let characters = key.split('');
     let asciiSum = characters.reduce((sum, character) => {
       return sum + character.charCodeAt(0);
-    },0)
-
+    }, 0)
+    let table = new HashTable(1024);
     let initialHash = asciiSum * 599;
     return initialHash % this.size;
+  };
 
-    set(key.value){
-      let position = this.hash(key);
-      let data = { [key]: value }
+  set(key, value) {
+    let position = this.hash(key);
+    let data = { [key]: value }
 
-      if(this.bucket[position])
-        let bucket = this.buckets[position];
+    if (this.bucket[position]) {
+      let bucket = this.buckets[position];
       bucket.add(data);
     } else {
       let bucket = new LinkedList();
       bucket.add(data);
       this.bucket[position] = buckets;
-      get(key){
-        let position = this.hash(key);
-        if (this.bucket[position][key]) {
-          let bucket = this.buckets[position];
-          let value = bucket.head.value[key]
-          return value
-        }
+      table.set('BiteMe', { name: 'BiteMe', age: 50 });
+    }
+
+    get(key, value) {
+      let position = this.hash(key);
+      if (this.bucket[position][key]) {
+        let bucket = this.buckets[position];
+        let value = bucket.head.value[key];
+        return value
       }
     }
+
   }
 }
-let
-  table = new HashTable(1024);
 console.log(table);
 console.log(table.hash('BiteMe'));
 
