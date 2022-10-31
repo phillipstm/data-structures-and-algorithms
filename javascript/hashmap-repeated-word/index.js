@@ -4,21 +4,22 @@ const { LinkedList } = require('..linked-list');
 const { get } = require('cheerio/lib/api/traversing');
 const { HashTable } = require('../hashtable/index');
 
-let sentence = 'Once upon a time, there was a brave princess who';
+const str = 'Once upon a time, there was a brave princess who';
 
-function repeatedWord(str) {
-  let splitStr = str.split('');
-  let list = [];
-
-  for (let i =0; i < splitStr.length; i++){
-    for (let j = i + 1; j < splitStr.length; j++) {
-      if (splitStr[i].match(splitStr[j])) {
-        list.push(splitStr[i]);
+function getRepeatedWord = (str) => {
+  let result = [];
+  str.map(each => {
+    let repeatedWord = 0;
+    for (let i = 0; i < each.length - 1; i++) {
+      if (each[i] === each[i = +1] && each[i] !== each[i - 1]) {
+        repeatedWord += 1;
       }
     }
-  }
-  return list[0];
-}
+    result.push(repeatedWord,'');
+  });
+  return result;
 
-console.log(repeatedWord(sentence));
+};
+getRepeatedWord([])
+  console.log(repeatedWord(str));
 
