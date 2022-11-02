@@ -27,7 +27,7 @@ class BinaryTree {
     return largestElement;
   }
 }
-let tree = new BirnaryTree();
+let tree = new BinaryTree();
 tree.root = new Node(2);
 tree.root.left = new Node(7);
 tree.root.right = new Node(5);
