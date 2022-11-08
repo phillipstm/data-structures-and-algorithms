@@ -38,7 +38,7 @@ class HashTable {
       if (this.bucket[position][key]) {
         let bucket = this.buckets[position];
         let value = bucket.head.value[key];
-        return value
+        return value;
       }
     }
 
@@ -47,3 +47,4 @@ class HashTable {
 console.log(table);
 console.log(table.hash('BiteMe'));
 
+module.exports = HashTable;
