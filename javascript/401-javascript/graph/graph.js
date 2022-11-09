@@ -60,10 +60,10 @@ class Graph {
       }
     }
   }
-
+};
   ///What do you want to return?..choosing entire set
   return visited;
-}
+
 
 
 ///Using stack funtionality instead
